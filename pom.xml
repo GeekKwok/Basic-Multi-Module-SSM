@@ -6,8 +6,8 @@
     <groupId>com.youmeek.parent</groupId>
     <artifactId>ssm-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <!--父级项目一般都是用pom来子项目依赖,一般软件的版本号/插件/都在这里进行定义,统一做管理-->
-    <!--install的时候parent也是要最新instal的,不然其他依赖就依赖不到这里了-->
+    <!--父级项目一般都是用pom来让子项目依赖,一般软件的版本号/插件/都在这里进行定义,统一做管理-->
+    <!--install的时候parent也是要最先install的,不然其他依赖就依赖不到这里了-->
     <packaging>pom</packaging>
     <name>ssm</name>
     <description>
@@ -15,6 +15,10 @@
     </description>
     <url>http://code.YouMeek.com/</url>
 
+    <modules>
+        <module>ssm-common</module>
+        <module>ssm-manage</module>
+    </modules>
 
     <!-- 集中定义公用的依赖版本号 -->
     <!--版本变量设置 start-->
@@ -41,7 +45,7 @@
 
         <junit.version>4.11</junit.version>
         <mysql-connector.version>5.1.21</mysql-connector.version>
-        <druid.version>1.0.4</druid.version>
+        <druid.version>1.1.10</druid.version>
 
         <slf4j.version>1.7.7</slf4j.version>
         <log4j.version>1.2.17</log4j.version>

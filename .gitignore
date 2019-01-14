@@ -1,0 +1,14 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+out
+gen
+ssm-common/ssm-common.iml
+ssm-manage/ssm-manage-dao/ssm-manage-dao.iml
+ssm-manage/ssm-manage-pojo/ssm-manage-pojo.iml
+ssm-manage/ssm-manage-service/ssm-manage-service.iml
+ssm-manage/ssm-manage-web/ssm-manage-web.iml
+ssm-manage/ssm-manage.iml
